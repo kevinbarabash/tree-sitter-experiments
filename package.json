@@ -4,9 +4,12 @@
   "main": "bindings/node",
   "license": "MIT",
   "devDependencies": {
-    "node-gyp": "^9.1.0",
     "nan": "^2.16.0",
+    "node-gyp": "^9.1.0",
     "tree-sitter-cli": "^0.20.6"
+  },
+  "dependencies": {
+    "web-tree-sitter": "^0.20.5"
   },
   "scripts": {
     "build": "tree-sitter generate && node-gyp build"
